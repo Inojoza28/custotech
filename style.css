@@ -1,0 +1,482 @@
+/* ESTILOS GERAIS */
+body{
+  background-color: #f8faf8;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.jumbotron{
+  border-radius: 12px;
+}
+.sobre{
+  font-size: 18px;
+}
+
+.navbar {
+  min-height: 10px; /* Defina a altura desejada aqui */
+}
+
+.navbar-custom {
+  background-color: #bebebe; /* Cor de fundo desejada */
+  color: #1c1c1f;
+}
+
+.btn-sm {
+  padding: 5px 8px; /* Ajuste o padding para alterar o tamanho do botão */
+  font-size: 14px; /* Altere o tamanho da fonte do botão */
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1.25rem;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.logo {
+  width: 80px; /* Defina a largura desejada */
+  height: 80px; /* Defina a altura desejada */
+}
+.shopee{
+  width: 80px; /* Defina a largura desejada */
+  height: 100px; /* Defina a altura desejada */
+}
+
+.bg-white {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Cor de fundo branca */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ margin: 10px auto;
+  padding-top: 70px;
+}
+
+  /* Estilos para telas pequenas */
+  @media screen and (max-width: 768px) {
+    .bg-white {
+      padding: 20px; /* Padding para todos os lados */
+      width: 94%;
+      margin: 10px auto;
+    }
+    .mb-sm-4 {
+      margin-bottom: 1rem !important; /* Espaçamento inferior para telas pequenas */
+    }
+    .logo{
+      width: 58px;
+      height: 58px;
+    }
+    .shopee{
+      width: 58px;
+      height: 78px;
+    }
+  }
+
+  /* Estilos para telas médias e maiores */
+  @media screen and (min-width: 768px) {
+    .bg-white {
+      padding: 20px 40px; /* Padding para o topo e a parte inferior */
+    }
+    .mb-md-4 {
+      margin-bottom: 1rem !important; /* Espaçamento inferior para telas médias e maiores */
+    }
+  }
+
+
+.card-img-top {
+  max-height: 450px; /* Defina a altura máxima desejada */
+  width: auto; /* Mantenha a largura automática para preservar a proporção */
+  object-fit: cover;
+}
+/* Estilos para os cards de destaque */
+.highlight-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animação ao passar o mouse sobre os cards */
+.highlight-card:hover {
+  transform: translateY(-8px);
+}
+
+.scroll-top{
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #ecc54e;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  padding: 15px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  z-index: 999; /* Valor alto para garantir que fique na frente */
+}
+
+.scroll-top:hover{
+  border-color: #fff;
+  box-shadow: none;
+}
+
+
+/* Estilos para o Modo Escuro */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode .navbar {
+    background-color: #333 !important;
+  }
+
+  .dark-mode .burger span{
+    background-color: #f3f3f3 !important;
+ 
+  }
+  
+  .dark-mode .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+  
+  .dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  
+  .dark-mode .navbar-nav .nav-link:hover {
+    color: #ccc !important;
+  }
+  
+  .dark-mode .btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+  .dark-mode .btn-dark:hover {
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+  
+  .dark-mode .jumbotron {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .dark-mode .card {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #444;
+    box-shadow: 0 4px 8px rgba(243, 243, 243, 0.034);
+  }
+
+  .dark-mode .card:hover {
+    box-shadow: 0 8px 16px rgba(245, 245, 245, 0.2);
+  }
+  
+  .dark-mode .card-title {
+    color: #fff;
+  }
+  
+  .dark-mode .card-text {
+    color: #ccc;
+  }
+
+  .dark-mode .my-4 {
+    background-color: #cccccc33;
+  }
+  
+  .dark-mode .footer {
+    background-color: #333 !important;
+    color: #fff;
+  }
+  
+  .dark-mode .footer a {
+    color: #fff;
+  }
+  
+  .dark-mode .footer a:hover {
+    color: #ccc;
+  }
+  
+  .dark-mode .navbar-brand {
+    color: #fff !important;
+  }
+  
+  .dark-mode .footer .text-muted {
+    color: #fff;
+  }
+
+  /* Estilos para o Modo Escuro */
+
+
+/* BOTÃO DARK */
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 1.8em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    top: 5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dbdbdb;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1c1c1f;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+
+/*FIM DO BOTÃO DARK */
+
+  /* Espaçamento no footer */
+  .footer {
+    background-color: #292828; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding-top: 30px; /* Espaçamento interno superior */
+    padding-bottom: 30px; /* Espaçamento interno inferior */
+    width: 100%; /* Largura total */
+    border-radius: 14px;
+  }
+  
+  .footer h5 {
+    color: #ffffff; /* Cor do título */
+  }
+  
+  .footer p {
+    font-size: 15px; /* Tamanho da fonte do parágrafo */
+    color: #fff;
+  }
+  
+  .footer ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding-left: 0; /* Remover o recuo padrão */
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+  }
+
+  .footer a {
+   text-decoration: none;
+   color: #fdfdfd;
+  }
+
+  .footer a:hover {
+    color: #4d4d4d; /* Cor dos ícones de redes sociais ao passar o mouse */
+  }
+  
+  .social-icon {
+    color: #ffffff; /* Cor dos ícones de redes sociais */
+    font-size: 20px; /* Tamanho dos ícones de redes sociais */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+  
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Cor dos ícones de redes sociais ao passar o mouse */
+  }
+
+    /* fIM DO Espaçamento no footer */
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px; /* Altere o tamanho da fonte para telas menores */
+  }
+  h2 {
+    font-size: 19px; /* Altere o tamanho da fonte para telas menores */
+  }
+  p {
+    font-size: 18px; /* Altere o tamanho da fonte para telas menores */
+  }
+  .sobre{
+    font-size: 18px; /* Altere o tamanho da fonte para telas menores */
+    text-align: justify;
+  }
+  .navbar-brand {
+    font-size: 24px; /* Ajuste o tamanho da fonte para telas menores */
+    font-weight: bold;
+  }
+  .display-4{
+   font-size: 24px;
+   font-weight: bold;
+  }
+ /* Estilo para a seção "Sobre" */
+#sobre {
+  padding: 20px;
+  background-color: #ebebebbd; /* Cor de fundo */
+  border-radius: 5px; /* Borda arredondada */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  text-align: justify;
+  
+}
+.dark-mode #sobre {
+  background-color: #2b2d30;
+}
+
+
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 12px; /* Ajuste o padding para tornar o botão menor */
+    font-size: 16px; /* Ajuste o tamanho da fonte do botão para telas menores */
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  
+.scroll-top{
+  font-size: 14px;
+  }
+
+}
+
+/* navbar-toggler */
+
+.burger {
+  position: relative;
+  width: 30px; /* Reduza a largura */
+  height: 20px; /* Reduza a altura */
+  top: 3px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 5px;
+}
+
+/* Fim do navbar-toggler */
