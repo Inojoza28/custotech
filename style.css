@@ -1,10 +1,14 @@
 /* ESTILOS GERAIS */
 body{
   background-color: #f8faf8;
+  /* transition: background-color 0.1s ease; */
 }
 
 html{
   scroll-behavior: smooth;
+}
+.row{
+  margin: 10px auto;
 }
 .jumbotron{
   border-radius: 12px;
@@ -85,7 +89,8 @@ html{
   /* Estilos para telas pequenas */
   @media screen and (max-width: 768px) {
     .bg-white {
-      padding: 20px; /* Padding para todos os lados */
+      padding: 10px; /* Padding para todos os lados */
+      padding-top: 30px;
       width: 94%;
       margin: 10px auto;
     }
@@ -151,6 +156,15 @@ html{
 .dark-mode {
     background-color: #222;
     color: #fff;
+  }
+
+  .dark-mode h1 {
+    color: #ccc !important;
+  }
+
+
+  .dark-mode .responsive-link {
+    color: #ccccccde !important;
   }
   
   .dark-mode .navbar {
@@ -298,6 +312,7 @@ html{
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
+  
 
 /*FIM DO BOTÃO DARK */
 
@@ -308,7 +323,7 @@ html{
     padding-top: 30px; /* Espaçamento interno superior */
     padding-bottom: 30px; /* Espaçamento interno inferior */
     width: 100%; /* Largura total */
-    border-radius: 14px;
+  
   }
   
   .footer h5 {
@@ -348,6 +363,11 @@ html{
   .social-icon:hover {
     color: #007bff; /* Cor dos ícones de redes sociais ao passar o mouse */
   }
+  .footer .col-md-4 {
+    margin: 10px auto;
+  
+  }
+  
 
     /* fIM DO Espaçamento no footer */
 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/logo.PNG" type="image/x-icon">
+  <title>Custo Tech</title>
+  <!-- Link para o CSS do Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Biblioteca de ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="scroll-top" onclick="scrollToTop()">
+    <i class='bx bxs-up-arrow'></i>
+</button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7fa64;">
+  <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; margin-left: 10px;">
+    <img src="imgs/logo.PNG" alt="logo" style="height: 2.5em;">
+    <span style="margin-left: -10px; font-size: 21px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">CustoTech</span>
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <label class="burger" for="burger">
+      <input type="checkbox" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#produtos">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#redesSociais">Contato</a>
+      </li>
+       <!-- Botão do Modo Escuro -->
+       <li class="nav-item">
+        <label class="switch" >
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label> 
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+  .responsive-link {
+    font-size: 1.30rem; /* Tamanho padrão para telas maiores */
+  }
+  
+  @media (max-width: 576px) {
+    .responsive-link {
+      font-size: 1rem; /* Tamanho reduzido para telas pequenas */
+      margin-bottom: 5px;
+      text-decoration: underline; /* Adiciona underline */
+      text-underline-offset: 3px; /* Ajusta o espaçamento entre a palavra e a linha */
+      text-decoration-color: #222222; /* Define a cor da linha */
+    }
+  }
+</style>
+<!-- Conteúdo da Página -->
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 style="color: #1d1d1dce;">Produtos:</h1>
+      <a href="index.html" class="btn btn-link responsive-link" style="color: #1d1d1dce;">Voltar ao Início</a>
+    </div>
+    <br>
+    <!-- Seção de Destaque de Produtos -->
+    <div class="row mb-5" id="produtos">
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card highlight-card">
+          <img src="imgs/Gabinetegamer.jpg" class="card-img-top" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Gabinete Gamer</h5>
+            <p class="card-text">Descrição do Produto 1.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card highlight-card">
+          <img src="imgs/mousegamer.jpg" class="card-img-top" alt="Produto 2">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Gamer</h5>
+            <p class="card-text">Descrição do Produto 2.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card highlight-card">
+          <img src="imgs/monitorgame.jpg" class="card-img-top" alt="Produto 3">
+          <div class="card-body">
+            <h5 class="card-title">Monitor Gamer</h5>
+            <p class="card-text">Descrição do Produto 3.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="imgs/mousegamer.jpg" class="card-img-top" alt="Produto 4">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Gamer</h5>
+            <p class="card-text">Descrição do Produto 4.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 5">
+          <div class="card-body">
+            <h5 class="card-title">Produto 5</h5>
+            <p class="card-text">Descrição do Produto 5.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 6">
+          <div class="card-body">
+            <h5 class="card-title">Produto 6</h5>
+            <p class="card-text">Descrição do Produto 6.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 7">
+          <div class="card-body">
+            <h5 class="card-title">Produto 7</h5>
+            <p class="card-text">Descrição do Produto 7.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 8">
+          <div class="card-body">
+            <h5 class="card-title">Produto 8</h5>
+            <p class="card-text">Descrição do Produto 8.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 9">
+          <div class="card-body">
+            <h5 class="card-title">Produto 9</h5>
+            <p class="card-text">Descrição do Produto 9.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 10">
+          <div class="card-body">
+            <h5 class="card-title">Produto 10</h5>
+            <p class="card-text">Descrição do Produto 10.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 11">
+          <div class="card-body">
+            <h5 class="card-title">Produto 11</h5>
+            <p class="card-text">Descrição do Produto 11.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 12">
+          <div class="card-body">
+            <h5 class="card-title">Produto 12</h5>
+            <p class="card-text">Descrição do Produto 12.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 13">
+          <div class="card-body">
+            <h5 class="card-title">Produto 13</h5>
+            <p class="card-text">Descrição do Produto 13.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 14">
+          <div class="card-body">
+            <h5 class="card-title">Produto 14</h5>
+            <p class="card-text">Descrição do Produto 14.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto2.jpg" class="card-img-top" alt="Produto 15">
+          <div class="card-body">
+            <h5 class="card-title">Produto 15</h5>
+            <p class="card-text">Descrição do Produto 15.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card">
+          <img src="produto3.jpg" class="card-img-top" alt="Produto 16">
+          <div class="card-body">
+            <h5 class="card-title">Produto 16</h5>
+            <p class="card-text">Descrição do Produto 16.</p>
+            <a href="#" class="btn btn-success">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- Footer -->
+<footer class="footer text-light mt-5" id="redesSociais">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Receba nossas novidades</h5>
+        <p>Para dúvidas, sugestões ou parcerias, entre em contato conosco pelo email:</p>
+        <p>E-mail: custotech24@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Links úteis</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#redesSociais">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Siga-nos nas redes sociais:</h5><br>
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/custotech/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <br><br><br>
+        <p>© 2024 CustoTech. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts JavaScript do Bootstrap e Font Awesome -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
