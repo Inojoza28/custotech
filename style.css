@@ -7,9 +7,7 @@ body{
 html{
   scroll-behavior: smooth;
 }
-.row{
-  margin: 10px auto;
-}
+
 .jumbotron{
   border-radius: 12px;
 }
@@ -323,15 +321,20 @@ html{
     padding-top: 30px; /* Espaçamento interno superior */
     padding-bottom: 30px; /* Espaçamento interno inferior */
     width: 100%; /* Largura total */
-  
+    font-size: 16px;
   }
+
+  .row.footer {
+    margin: 10px auto;
+}
+
   
   .footer h5 {
     color: #ffffff; /* Cor do título */
   }
   
   .footer p {
-    font-size: 15px; /* Tamanho da fonte do parágrafo */
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
     color: #fff;
   }
   
@@ -412,8 +415,8 @@ html{
 
 @media (max-width: 576px) {
   .btn {
-    padding: 6px 10px; /* Ajuste o padding para tornar o botão menor */
-    font-size: 15px; /* Ajuste o tamanho da fonte do botão para telas menores */
+    padding: 8px 12px; /* Ajuste o padding para tornar o botão menor */
+    font-size: 16px; /* Ajuste o tamanho da fonte do botão para telas menores */
   }
 }
 
