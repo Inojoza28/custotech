@@ -1,3 +1,4 @@
+// Modo dark 
 const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
@@ -18,9 +19,10 @@ const darkModeToggle = document.getElementById('darkModeToggle');
         localStorage.setItem('mode', currentMode);
     });
 
+// Fim do Modo dark 
     
-// Botão de scroll top
 
+// Botão de scroll top
 function scrollToTop() {
   window.scrollTo({
       top: 0,
@@ -36,4 +38,4 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
+// Fim do Botão de scroll top
