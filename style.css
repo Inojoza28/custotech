@@ -167,6 +167,7 @@ html{
   
   .dark-mode .navbar {
     background-color: #333 !important;
+    border-bottom: 3px solid #f7fa64; /* Adiciona a borda inferior amarela */
   }
 
   .dark-mode .burger span{
@@ -353,7 +354,7 @@ html{
   }
 
   .footer a:hover {
-    color: #4d4d4d; /* Cor dos ícones de redes sociais ao passar o mouse */
+    color: #ffee5a; /* Cor dos ícones de redes sociais ao passar o mouse */
   }
   
   .social-icon {
