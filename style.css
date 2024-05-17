@@ -412,8 +412,8 @@ html{
 
 @media (max-width: 576px) {
   .btn {
-    padding: 8px 12px; /* Ajuste o padding para tornar o botão menor */
-    font-size: 16px; /* Ajuste o tamanho da fonte do botão para telas menores */
+    padding: 6px 10px; /* Ajuste o padding para tornar o botão menor */
+    font-size: 15px; /* Ajuste o tamanho da fonte do botão para telas menores */
   }
 }
 
