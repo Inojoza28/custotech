@@ -38,8 +38,12 @@ window.addEventListener('scroll', function () {
 });
 // Fim do Botão de scroll top
 
+
+// Google Analystics
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-KTW5LKZ7F0');
+
+// Fim do Google Analystics
