@@ -281,7 +281,6 @@ html{
 
   /* Estilos para o Modo Escuro */
 
-
 /* BOTÃO DARK */
 
 /* The switch - the box around the slider */
@@ -527,3 +526,39 @@ html{
 }
 
 /* Fim do navbar-toggler */
+
+
+/* Define uma altura fixa para todas as imagens dos cards */
+.card-img-top {
+  height: 350px; /* Ajuste essa altura conforme necessário */
+  object-fit: cover; /* Assegura que a imagem cobre o espaço sem distorcer */
+}
+
+/* Define uma altura mínima para os cards para garantir consistência */
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Garante que o corpo do card ocupe o espaço disponível de forma uniforme */
+.highlight-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 250px; /* Altura reduzida para telas menores */
+ 
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 160px; /* Altura reduzida ainda mais para telas muito pequenas */
+  }
+}
