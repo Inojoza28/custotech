@@ -95,18 +95,28 @@ html{
     .mb-sm-4 {
       margin-bottom: 1rem !important; /* Espaçamento inferior para telas pequenas */
     }
-    .logo{
+    .logo {
       width: 48px;
       height: 48px;
     }
+     .dark-mode .amz{
+      width: 58px !important;
+      height: 58px!important;
+    }
+
+    .dark-mode .amz .logo {
+      width: 27px !important;
+      height: auto !important;
   }
+  }
+  
 
   /* Estilos para telas médias e maiores */
   @media screen and (min-width: 768px) {
     .bg-white {
       padding: 20px 40px; /* Padding para o topo e a parte inferior */
     }
-    .mb-md-4 {
+    .mb-md-4{
       margin-bottom: 1rem !important; /* Espaçamento inferior para telas médias e maiores */
     }
   }
@@ -174,6 +184,28 @@ html{
     background-color: #f3f3f3 !important;
  
   }
+
+  .dark-mode .bg-white{
+    background-color: #f3f3f31f !important;
+    border-bottom: 3px solid #fd5421; /* Adiciona a borda inferior amarela */
+  }
+
+  .dark-mode .amz {
+    background-color: #dddbdbf1 !important;
+    border-radius: 50%;
+    width: 80px;  /* Aumente a largura do contêiner */
+    height: 80px; /* Aumente a altura do contêiner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.dark-mode .amz .logo {
+    width: 45px;  /* Mantenha o tamanho da logo constante */
+    height: auto; /* Manter a proporção da logo */
+}
+
   
   .dark-mode .navbar-nav .nav-link {
     color: #fff !important;
