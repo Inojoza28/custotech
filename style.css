@@ -107,10 +107,9 @@ html{
     .dark-mode .amz .logo {
       width: 27px !important;
       height: auto !important;
-  }
+    }
   }
   
-
   /* Estilos para telas médias e maiores */
   @media screen and (min-width: 768px) {
     .bg-white {
@@ -269,7 +268,7 @@ html{
   }
   
   .dark-mode .footer a:hover {
-    color: #ccc;
+    color: #ffee5a;
   }
   
   .dark-mode .navbar-brand {
