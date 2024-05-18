@@ -199,12 +199,13 @@ html{
   }
   
   .dark-mode .jumbotron {
-    background-color: #343a40;
+    background-color: #303030;
+    border-bottom: 3px solid #64aafa; /* Adiciona a borda inferior azul */
     color: #fff;
   }
   
   .dark-mode .card {
-    background-color: #343a40;
+    background-color: #3d3d3d;
     color: #fff;
     border-color: #444;
     box-shadow: 0 4px 8px rgba(243, 243, 243, 0.034);
