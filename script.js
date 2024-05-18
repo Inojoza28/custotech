@@ -18,7 +18,6 @@ const darkModeToggle = document.getElementById('darkModeToggle');
         const currentMode = body.classList.contains('dark-mode') ? 'dark-mode' : '';
         localStorage.setItem('mode', currentMode);
     });
-
 // Fim do Modo dark 
     
 
@@ -37,5 +36,10 @@ window.addEventListener('scroll', function () {
       scrollTopButton.style.display = 'none';
   }
 });
-
 // Fim do Botão de scroll top
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-KTW5LKZ7F0');
