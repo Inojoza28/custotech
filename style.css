@@ -176,7 +176,7 @@ html{
   
   .dark-mode .navbar {
     background-color: #333 !important;
-    border-bottom: 3px solid #fdda4d; /* Adiciona a borda inferior amarela */
+    border-bottom: 3px solid #ffee50d3; /* Adiciona a borda inferior amarela */
   }
 
   .dark-mode .burger span{
@@ -236,7 +236,7 @@ html{
   
   .dark-mode .jumbotron {
     background-color: #303030;
-    border-bottom: 3px solid #004da5; /* Adiciona a borda inferior azul */
+    border-bottom: 3px solid #005f77; /* Adiciona a borda inferior azul */
     color: #fff;
   }
   
