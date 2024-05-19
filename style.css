@@ -184,6 +184,11 @@ html{
  
   }
 
+  .dark-mode .title{
+    color: #f1f1f1 !important;
+ 
+  }
+
   .dark-mode .bg-white{
     background-color: #f3f3f31f !important;
     border-bottom: 3px solid #fd5421; /* Adiciona a borda inferior amarela */
