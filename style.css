@@ -236,7 +236,7 @@ html{
   
   .dark-mode .jumbotron {
     background-color: #303030;
-    border-bottom: 3px solid #005f77; /* Adiciona a borda inferior azul */
+    border-bottom: 3px solid #004da5b2; /* Adiciona a borda inferior azul */
     color: #fff;
   }
   
