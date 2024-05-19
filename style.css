@@ -176,7 +176,7 @@ html{
   
   .dark-mode .navbar {
     background-color: #333 !important;
-    border-bottom: 3px solid #f7fa64; /* Adiciona a borda inferior amarela */
+    border-bottom: 3px solid #fdda4d; /* Adiciona a borda inferior amarela */
   }
 
   .dark-mode .burger span{
