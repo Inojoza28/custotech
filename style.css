@@ -84,6 +84,14 @@ html{
   margin: 10px auto;
 }
 
+.logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
   /* Estilos para telas pequenas */
   @media screen and (max-width: 768px) {
     .bg-white {
